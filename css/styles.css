@@ -32,20 +32,40 @@ legend {
 input {
   background-color: #dcdfe3;
   border: 1px solid #dcdfe3
-  
+
 }
 
 /* =================================
   Base Layout Styles
 ==================================== */
 
-/* ---- Navigation ---- */
+.contact-info {
+  border: none;
+  padding: 50px 50px 35px 50px;
+}
+
+.contact-info label {
+  margin-bottom: 10px;
+}
+
+.contact-info input {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
 
 /* ---- Layout Containers ---- */
 
 .wrapper {
   width: 80%;
   margin: 0 auto;
+}
+
+.contact-info .flex-pair{
+  display: flex;
+  flex-direction: column;
+
 }
 /* =================================
   Media Queries
