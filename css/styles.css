@@ -6,10 +6,11 @@
    */
 * {
   box-sizing: border-box;
+  padding: 0;
 }
 
 body {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-family: 'Merriweather', serif;
   margin: 0 auto;
   max-width: 768px;
@@ -43,27 +44,33 @@ h2 {
 } */
 
 legend {
-  border: 1px solid blue;
+  /* outline: 1px solid blue; */
+  font-size: 1.25em;
   font-weight: bold;
+  margin: 20px 0;
+  text-align: left;
 }
 
 label {
-  border: 1px solid blue;
+  margin-bottom: 10px;
 }
 
-input {
-  border: 1px solid blue;
+input, select {
   background-color: #dcdfe3;
-  /* border: 1px solid #dcdfe3 */
-
+  border: 1px solid #dcdfe3
 }
 
 form {
-  border: 2px solid red;
+  border-top: 2px solid black;
+  margin: 0 20px;
+  padding: 20px 0 0;
+  /* border: 2px solid red; */
 }
 
 fieldset {
-  border: 2px solid red;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 label, p {
@@ -76,13 +83,13 @@ label, p {
 .cta {
   border-bottom: 3px solid black;
   line-height: 1em;
-  margin: 35px 20px;
-  padding-bottom: 35px; 
+  margin: 35px 20px 5px;
+  padding-bottom: 35px;
   text-align: center;
 }
 
 .contact-info {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
   /* padding: 50px 50px 35px 50px; */
 }
@@ -91,13 +98,15 @@ label, p {
   margin-bottom: 10px;
 }
 
-.contact-info input {
+.contact-info input, select {
   border-radius: 5px;
   margin-bottom: 15px;
   height: 50px;
-
 }
 
+#zip {
+  width: 50%;
+}
 /* ---- Layout Containers ---- */
 
 .wrapper {
@@ -112,7 +121,7 @@ label, p {
 }
 
 .flex-pair {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 }
 /* =================================
