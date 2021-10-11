@@ -1,25 +1,19 @@
 /* =================================
   Base Element Styles
 ==================================== */
-/* wrappers - red
-   elements - blue
-   */
 * {
   box-sizing: border-box;
+  font-family: 'Merriweather', serif;
   padding: 0;
 }
 
 body {
-  /* border: 1px solid red; */
-  font-family: 'Merriweather', serif;
   margin: 0 auto;
-  max-width: 768px;
   padding: 0;
 
 }
 
 header {
-  /* border: 2px solid red; */
   background-color: #2b3a4a;
   color: white;
   height: 70px;
@@ -28,23 +22,27 @@ header {
 }
 
 h1 {
-  /* border: 1px solid blue; */
   font-size: 1.5em;
   margin: 0;
   text-transform: uppercase;
 }
 
 h2 {
-  /* border: 1px solid blue; */
   font-weight: bold;
 }
 
-/* p{
-  border: 1px solid blue;
-} */
+form {
+  border-top: 2px solid black;
+  margin: 0 20px;
+  padding: 20px 0 0;
+}
 
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 legend {
-  /* outline: 1px solid blue; */
   font-size: 1.25em;
   font-weight: bold;
   margin: 20px 0;
@@ -57,26 +55,37 @@ label {
 
 input, select {
   background-color: #dcdfe3;
-  border: 1px solid #dcdfe3
-}
-
-form {
-  border-top: 2px solid black;
-  margin: 0 20px;
-  padding: 20px 0 0;
-  /* border: 2px solid red; */
-}
-
-fieldset {
   border: none;
-  margin: 0;
-  padding: 0;
 }
 
 label, p {
   color: gray;
 }
 
+
+textarea {
+  background-color: #dcdfe3;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0 30px;
+  width: 100%;
+}
+
+button {
+  background-color: #0ecfbe;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em;
+  height: 60px;
+  width: 100%;
+}
+footer {
+  margin: 10px 0 200px;
+  font-style: italic;
+  text-align: center;
+}
 /* =================================
   Base Layout Styles
 ==================================== */
@@ -89,9 +98,10 @@ label, p {
 }
 
 .contact-info {
-  /* border: 2px solid red; */
-}
-  /* padding: 50px 50px 35px 50px; */
+  border-bottom: 2px solid black;
+  /* outline: 1px solid blue; */
+  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .contact-info label {
@@ -110,20 +120,38 @@ label, p {
 /* ---- Layout Containers ---- */
 
 .wrapper {
-  width: 95%;
+  margin: 0 auto;
+  max-width: 768px;
   margin: 0 auto;
 }
 
-.contact-info .flex-pair{
+.flex-pair{
   display: flex;
   flex-direction: column;
-
 }
 
-.flex-pair {
-  /* border: 2px solid orange; */
+.newsletter legend {
+  margin-bottom: 10px;
 }
+
+.newsletter_option {
+  margin: 10px 0;
 }
+
+.newsletter_topics {
+  margin-top: 30px;
+}
+
 /* =================================
   Media Queries
-==================================== */
+=================================== */
+
+@mediaquery (min-width: 768px) {
+
+  .flex-pair {
+    flex-direction: row;
+  }
+
+
+
+}

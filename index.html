@@ -21,7 +21,7 @@
         <p>Get the latest news on how your code is doing right in your inbox</p>
       </div>
 
-      <form class="registration" action="index.html" method="post">
+      <form action="index.html" method="post">
         <fieldset class="contact-info">
           <legend>Contact Information</legend>
           <div>
@@ -115,47 +115,46 @@
           </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="newsletter">
           <legend>Newsletter</legend>
 
           <p>Select the newsletters you would like to receive</p>
 
-            <div class="">
+            <div class="newsletter_option">
               <input type="checkbox" id="html_news" name="html_news" value="html news">
               <label for="html_news">HTML News</label>
             </div>
 
-            <div class="">
+            <div class="newsletter_option">
               <input type="checkbox" id="css_news" name="css_news" value="css news">
               <label for="css_news">CSS News</label>
             </div>
 
-            <div class="">
+            <div class="newsletter_option">
               <input type="checkbox" id="js_news" name="js_news" value="js news">
               <label for="js_news">Javascript News</label>
             </div>
         </fieldset>
 
-        <fieldset>
-          <legend>Newletter format</legend>
+          <p>Newletter format</p>
 
-            <div class="">
+            <div class="newsletter_option">
               <input type="radio" id="html" name="format" value="html">
               <label for="html">HTML</label>
             </div>
 
-            <div class="">
+            <div class="newsletter_option">
               <input type="radio" id="plain_text" name="format" value="plain text">
               <label for="plain_text">Plain Text</label>
             </div>
 
-            <div class="">
+            <div class="newsletter_topics">
               <label for="topics">Other topics you'd like to hear about</label>
               <textarea id="topics" name="topics" rows="8" cols="30"></textarea>
             </div>
         </fieldset>
 
-        <button type="submit" name="button">Submit</button>
+        <button type="submit" name="button">Sign Up</button>
       </form>
 
       <footer>
