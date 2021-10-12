@@ -10,7 +10,6 @@
 body {
   margin: 0 auto;
   padding: 0;
-
 }
 
 header {
@@ -58,10 +57,15 @@ input, select {
   border: none;
 }
 
+input[placeholder] {
+  font-style: italic;
+  padding-right: 20px; 
+  text-align: right;
+}
+
 label, p {
   color: gray;
 }
-
 
 textarea {
   background-color: #dcdfe3;
