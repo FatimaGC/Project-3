@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
@@ -27,33 +28,33 @@
           <div>
             <div class="flex-pair">
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="user_name" value="" placeholder="Required">
+              <input type="text" id="name" name="user_name" value="" placeholder="Required" required>
             </div>
 
             <div class="flex-pair">
               <label for="mail">Email Address</label>
-              <input type="email" id="mail" name="user_email" value="" placeholder="Required">
+              <input type="email" id="mail" name="user_email" value="" placeholder="Required" required>
             </div>
 
             <div class="flex-pair">
               <label for="tel">Phone Number</label>
-              <input type="tel" id="tel" name="user_tel" value="">
+              <input type="tel" id="tel" name="user_tel" value="" placeholder="(123) 456-789">
             </div>
 
             <div class="flex-pair">
               <label for="address">Street Address</label>
-              <input type="text" id="address" name="user_address" value="">
+              <input type="text" id="address" name="user_address" value="" placeholder="123 Main St.">
             </div>
 
             <div class="flex-pair">
               <label for="city">City</label>
-              <input type="text" id="city" name="user_city" value="">
+              <input type="text" id="city" name="user_city" value="" placeholder="Denver">
             </div>
 
             <div class="flex-pair">
               <label for="state">State</label>
               <select class="" id="state" name="user_state">
-                <option value="choose state">Choose State</option>
+                <option value="choose-state" selected="selected" disabled>Choose State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -110,7 +111,7 @@
 
             <div class="flex-pair">
               <label for="zip">Zip Code</label>
-              <input type="text" id="zip" name="user_zip" value="">
+              <input type="text" id="zip" name="user_zip" value="" placeholder="12345">
             </div>
           </div>
         </fieldset>

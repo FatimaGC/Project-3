@@ -109,7 +109,6 @@ footer {
 
 .contact-info {
   border-bottom: 2px solid black;
-  /* outline: 1px solid blue; */
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
@@ -128,6 +127,18 @@ footer {
   width: 50%;
 }
 
+.newsletter legend {
+  margin-bottom: 10px;
+}
+
+.newsletter_option {
+  margin: 10px 0;
+}
+
+.newsletter_topics {
+  margin-top: 30px;
+}
+
 /* ---- Layout Containers ---- */
 
 .wrapper {
@@ -139,18 +150,6 @@ footer {
 .flex-pair{
   display: flex;
   flex-direction: column;
-}
-
-.newsletter legend {
-  margin-bottom: 10px;
-}
-
-.newsletter_option {
-  margin: 10px 0;
-}
-
-.newsletter_topics {
-  margin-top: 30px;
 }
 
 /* =================================
